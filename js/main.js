@@ -18,7 +18,7 @@ form.addEventListener("submit", (evento) => {
 
     if (existe) {
         itemAtual.id = existe.id
-        
+
         atualizaElemento(itemAtual)
         itens[existe.id] = itemAtual
     } else {
@@ -39,9 +39,8 @@ function criaElemento(item) {
     numeroItem.innerHTML = item.quantidade
     numeroItem.dataset.id = item.id
     novoItem.appendChild(numeroItem)
-    
-    novoItem.innerHTML += item.nome
 
+    novoItem.innerHTML += item.nome
     lista.appendChild(novoItem)
 }
 
